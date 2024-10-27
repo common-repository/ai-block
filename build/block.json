@@ -1,0 +1,33 @@
+{
+  "name": "blockify/ai-block",
+  "title": "AI Block",
+  "description": "An intelligent block that helps you generate posts, pages or any kind of content with AI.",
+  "category": "common",
+  "icon": "plus-alt",
+  "textdomain": "ai-block",
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "bot",
+    "chat",
+    "chatbot",
+    "content",
+    "create",
+    "generate",
+    "open"
+  ],
+  "attributes": {
+    "apiKey": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "inserter": true,
+    "multiple": true,
+    "reusable": false,
+    "customClassName": false
+  },
+  "editorScript": "file:index.js",
+  "editorStyle": "file:index.css"
+}

@@ -1,0 +1,97 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.editor-styles-wrapper .ai-block {
+  position: relative;
+}
+.editor-styles-wrapper .ai-block:before {
+  border-radius: 6px;
+  box-shadow: 0 5px 20px -10px currentColor;
+  content: "";
+  display: block;
+  inset: 2px -20px;
+  pointer-events: none;
+  position: absolute;
+  opacity: 0.1;
+  transition: box-shadow 0.333s ease-in;
+}
+.editor-styles-wrapper .ai-block:hover:before, .editor-styles-wrapper .ai-block:focus:before, .editor-styles-wrapper .ai-block:focus-within:before {
+  box-shadow: 0 5px 20px 0px currentColor;
+}
+.editor-styles-wrapper .ai-block p {
+  width: 100%;
+  padding: 1em 0;
+  margin: 0;
+}
+.editor-styles-wrapper .ai-block button {
+  transition: opacity 0.33s ease-in;
+}
+.editor-styles-wrapper .ai-block button svg {
+  transform: scale(0.8) rotate(45deg) translateY(2px) translateX(-2px);
+}
+.editor-styles-wrapper .ai-block button.is-busy {
+  animation: none;
+  background: none;
+  position: relative;
+}
+.editor-styles-wrapper .ai-block button.is-busy:before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  animation: components-button__loading-animation 5s linear infinite;
+  opacity: 1;
+  background-size: 100px 100%;
+  background-image: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.5) 25%, transparent 50%, #fff 0);
+}
+.editor-styles-wrapper .ai-block button.is-busy svg {
+  transform: none;
+}
+.editor-styles-wrapper .ai-block input.components-text-control__input {
+  padding: 0;
+  border: 0;
+  font-size: initial;
+  color: inherit;
+  background: transparent;
+  line-height: 1;
+  margin: 0 !important;
+  height: auto;
+  width: auto;
+}
+
+@keyframes components-button__loading-animation {
+  0% {
+    background-position: -150px 0;
+  }
+}
+[data-type="blockify/ai-block"] {
+  margin-bottom: var(--wp--style--block-gap, 1em);
+}
+[data-type="blockify/ai-block"].is-highlighted {
+  box-shadow: none;
+}
+[data-type="blockify/ai-block"]:focus:after {
+  display: none;
+}
+
+.ai-block-settings {
+  padding: 0 16px 16px;
+}
+.ai-block-settings .components-flex div {
+  margin: 0;
+}
+.ai-block-settings .components-flex div:first-of-type {
+  flex: 1;
+}
+
+.ai-block-label {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 0px;
+}
+
+/*# sourceMappingURL=index.css.map*/
